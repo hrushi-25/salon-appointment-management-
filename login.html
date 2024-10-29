@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box form-box">
+            <header>Welcome Back!</header>
+            <p class="sub-header">Please login to continue.</p>
+            <form id="loginForm">
+                <div class="field input">
+                    <label for="username">User</label>
+                    <input type="text" name="username" id="username" autocomplete="off" required placeholder="Enter your username">
+                </div>
+
+                <div class="field input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" required placeholder="Enter your password">
+                </div>
+
+                <div class="field input">
+                    <label for="role">Role</label>
+                    <select name="role" id="role" class="expsize" required>
+                        <option value="customer">Customer</option>
+                        <option value="employee">Employee</option>
+                    </select>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <input type="button" onclick="login()" value="Login" class="btn submit" />
+
+                <div class="links">
+                    Don't have an account? <a href="register.html">Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            const role = document.getElementById('role').value;
+            if (role === 'customer') {
+                window.location.href = 'appointment2.html'; // Redirect to customer page
+            } else if (role === 'employee') {
+                window.location.href = 'employee.html'; // Redirect to employee page
+            } else {
+                alert('Invalid role selected.');
+            }
+        }
+    </script>
+</body>
+</html>

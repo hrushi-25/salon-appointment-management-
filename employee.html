@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee - Manage Appointments</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box form-box">
+            <header>Customer Appointments</header>
+            <p class="sub-header">Manage customer bookings and make updates</p>
+
+            <!-- Search Appointment -->
+            <form action="" method="get">
+                <h3>Find Appointment</h3>
+                <div class="field input">
+                    <label for="search-customer">Search by Customer Name:</label>
+                    <input type="Name" id="search-customer" name="search-customer" placeholder="Enter customer Name" required>
+                </div>
+                <input type="submit" class="btn" value="Search">
+            </form>
+
+            <hr>
+
+            <!-- Appointment Management -->
+            <h3>Appointment Details</h3>
+            <div class="appointment-details">
+                <p><strong>Customer Name:</strong> John Doe</p>
+                <p><strong>Service:</strong> Haircut</p>
+                <p><strong>Date:</strong> October 25, 2024</p>
+                <p><strong>Time:</strong> 10:00 AM</p>
+                <p><strong>Stylist:</strong> Ramesh</p>
+                <p><strong>Status:</strong> Confirmed</p>
+            </div>
+
+            <hr>
+
+            <!-- Update Appointment Status -->
+            <form action="" method="post">
+                <h3>Update Appointment Status</h3>
+                <div class="field input">
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="confirmed">Confirmed</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="completed">Completed</option>
+                        <option value="canceled">Canceled</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn" value="Update Status">
+            </form>
+
+            <hr>
+
+            <!-- Assign Stylist -->
+            <form action="" method="post">
+                <h3>Assign or Change Stylist</h3>
+                <div class="field input">
+                    <label for="stylist">Choose Stylist:</label>
+                    <select id="stylist" name="stylist" required>
+                        <option value="ramesh">Ramesh</option>
+                        <option value="suresh">Suresh</option>
+                        <option value="kamlesh">Kamlesh</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn" value="Assign Stylist">
+            </form>
+
+            <hr>
+
+            <!-- Update Services -->
+            <form action="" method="post">
+                <h3>Update Services</h3>
+                <div class="field input">
+                    <label for="service">Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="haircut">Haircut</option>
+                        <option value="manicure">Manicure</option>
+                        <option value="pedicure">Pedicure</option>
+                        <option value="facial">Facial</option>
+                        <option value="massage">Massage</option>
+                    </select>
+                </div>
+
+                <div class="field input">
+                    <label for="add-service">Additional Services (Optional):</label>
+                    <select id="add-service" name="add-service">
+                        <option value="">-- Select Additional Service --</option>
+                        <option value="hair-coloring">Hair Coloring</option>
+                        <option value="hair-styling">Hair Styling</option>
+                    </select>
+                </div>
+
+                <input type="submit" class="btn" value="Update Services">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Customer - Manage Appointment</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box form-box">
+            <header>Manage Your Appointment</header>
+            <p class="sub-header">View and Update Your Upcoming Appointment Details</p>
+
+            <!-- Appointment Details -->
+            <div class="appointment-details">
+                <p><strong>Service:</strong> Haircut</p>
+                <p><strong>Date:</strong> October 25, 2024</p>
+                <p><strong>Time:</strong> 10:00 AM</p>
+                <p><strong>Stylist:</strong> Ramesh</p>
+            </div>
+
+            <hr>
+
+            <!-- Reschedule Appointment -->
+            <form action="" method="post">
+                <h3>Reschedule Appointment</h3>
+                <div class="field input">
+                    <label for="new-date">New Date:</label>
+                    <input type="date" id="new-date" name="new-date" required>
+                </div>
+
+                <div class="field input">
+                    <label for="new-time">New Time:</label>
+                    <input type="time" id="new-time" name="new-time" required>
+                </div>
+
+                <input type="submit" class="btn" value="Reschedule">
+            </form>
+
+            <hr>
+
+            <!-- Update Service -->
+            <form action="" method="post">
+                <h3>Update Services</h3>
+                <div class="field input">
+                    <label for="service">Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="haircut">Haircut</option>
+                        <option value="manicure">Manicure</option>
+                        <option value="pedicure">Pedicure</option>
+                        <option value="facial">Facial</option>
+                        <option value="massage">Massage</option>
+                    </select>
+                </div>
+
+                <div class="field input">
+                    <label for="add-service">Additional Services (Optional):</label>
+                    <select id="add-service" name="add-service">
+                        <option value="">-- Select Additional Service --</option>
+                        <option value="hair-coloring">Hair Coloring</option>
+                        <option value="hair-styling">Hair Styling</option>
+                    </select>
+                </div>
+
+                <input type="submit" class="btn" value="Update Services">
+            </form>
+
+            <hr>
+
+            <!-- Change Stylist -->
+            <form action="" method="post">
+                <h3>Change Stylist</h3>
+                <div class="field input">
+                    <label for="stylist">Choose Stylist:</label>
+                    <select id="stylist" name="stylist" required>
+                        <option value="ramesh">Ramesh</option>
+                        <option value="suresh">Suresh</option>
+                        <option value="kamlesh">Kamlesh</option>
+                    </select>
+                </div>
+
+                <input type="submit" class="btn" value="Change Stylist">
+            </form>
+
+            <hr>
+
+            <!-- Cancel Appointment -->
+            <form action="" method="post">
+                <h3>Cancel Appointment</h3>
+                <p>If you wish to cancel this appointment, click the button below.</p>
+                <input type="submit" class="btn cancel-btn" value="Cancel Appointment">
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

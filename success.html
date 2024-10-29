@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booked Successfully</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-box">
+            <div class="check-icon">✔</div>
+            <h1>Appointment Booked Successfully!</h1>
+            <p class="sub-header">Thank you for booking with us. Here are your appointment details:</p>
+
+            <div class="appointment-details">
+                <p><strong>Full Name:</strong> Anush Surve</p>
+                <p><strong>Email:</strong> SURVESTYLES@gmail.com</p>
+                <p><strong>Phone:</strong> +91 8856935248</p>
+                <p><strong>Address:</strong> Vasrang Goan</p>
+                <p><strong>Appointment Date:</strong> 2024-10-31</p>
+                <p><strong>Time:</strong> 10:30 AM</p>
+                <p><strong>Service:</strong> Haircut</p>
+                <p><strong>Stylist:</strong> Ramesh</p>
+                <p><strong>Additional Notes:</strong> Please clean bring a towel</p>
+            </div>
+
+            <div class="payment-receipt">
+                <h2>Payment Receipt</h2>
+                <p>Payment Amount: 50.00</p>
+                <p>Payment Method: Credit Card</p>
+                <p>Transaction ID: #1234567890</p>
+            </div>
+
+            <a href="appointment2.html" class="back-btn">Back to Home</a>
+        </div>
+    </div>
+    <script>
+        const data = JSON.parse(localStorage.getItem('appointmentData'));
+        if (data) {
+            document.querySelector('.appointment-details').innerHTML = `
+                <p><strong>Full Name:</strong> ${data.name}</p>
+                <p><strong>Email:</strong> ${data.email}</p>
+                <p><strong>Phone:</strong> ${data.phone}</p>
+                <p><strong>Address:</strong> ${data.address}</p>
+                <p><strong>Appointment Date:</strong> ${data.date}</p>
+                <p><strong>Time:</strong> ${data.time}</p>
+                <p><strong>Service:</strong> ${data.service}</p>
+                <p><strong>Stylist:</strong> ${data.stylist}</p>
+                <p><strong>Additional Notes:</strong> ${data.notes}</p>
+            `;
+        }
+    </script>
+    
+</body>
+</html>
