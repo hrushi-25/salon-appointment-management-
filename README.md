@@ -1,2 +1,3 @@
 # salon-appointment-management-
-This is project manily used to slove the problem faced by user to go in the salon and wait for a half and hour or more time in the salon. this project solves this problem by booking an appointment already and to go direct on time which saves a lot of time for the user and as well as admin 
+This project addresses the common issue of long wait times at salons by allowing users to book appointments in advance, eliminating the need to wait for extended periods upon arrival. By enabling users to schedule their appointments, the solution not only saves time for the customers but also improves operational efficiency for salon administrators. This streamlined approach benefits both parties, as users can plan their visits more conveniently, and salon staff can manage their schedules more effectively.
+
